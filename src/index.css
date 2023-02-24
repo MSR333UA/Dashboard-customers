@@ -153,6 +153,7 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: #fafbff;
   margin: 0;
+  font-size: 14px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
