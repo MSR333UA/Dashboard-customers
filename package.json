@@ -2,7 +2,7 @@
   "name": "dashboard-customers",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://MSR333UA.github.io/dashboard-customers/",
+ "homepage": "https://msr333ua.github.io/dashboard-customers/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -16,7 +16,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "react-scripts build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
