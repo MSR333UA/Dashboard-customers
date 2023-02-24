@@ -1,4 +1,6 @@
 import React from "react";
+import avatar from "../../assets/img/avatar.png";
+import sprite from "../../assets/img/sprite.svg";
 
 export const Dashboard = () => {
   return (
@@ -11,48 +13,86 @@ export const Dashboard = () => {
           <h3 className="visually-hidden">Sidebar section</h3>
           <div className="sidebar">
             <div className="logo sidebar__logo">
+              <svg className="logo__icon">
+                <use href={`${sprite}#icon-logo`}></use>
+              </svg>
               <p className="logo__text">
                 Dashboard <span className="logo__text--small-text">v.01</span>
               </p>
             </div>
-
             <div className="nav-content">
               <ul className="nav">
                 <li className="nav__item">
                   <a className="nav__link" href="/">
+                    <svg className="nav__icon">
+                      <use href={`${sprite}#icon-key-square`}></use>
+                    </svg>
                     Dashboard
+                    <svg className="nav__icon--arrow-right">
+                      <use href={`${sprite}#icon-chevron`}></use>
+                    </svg>
                   </a>
                 </li>
                 <li className="nav__item">
                   <a className="nav__link" href="/">
+                    <svg className="nav__icon">
+                      <use href={`${sprite}#icon-3d-square`}></use>
+                    </svg>
                     Product
+                    <svg className="nav__icon--arrow-right">
+                      <use href={`${sprite}#icon-chevron`}></use>
+                    </svg>
                   </a>
                 </li>
                 <li className="nav__item">
                   <a className="nav__link nav__link--active" href="/">
+                    <svg className="nav__icon">
+                      <use href={`${sprite}#icon-user-square`}></use>
+                    </svg>
                     Customers
+                    <svg className="nav__icon--arrow-right">
+                      <use href={`${sprite}#icon-chevron`}></use>
+                    </svg>
                   </a>
                 </li>
                 <li className="nav__item">
                   <a className="nav__link" href="/">
+                    <svg className="nav__icon">
+                      <use href={`${sprite}#icon-wallet-money`}></use>
+                    </svg>
                     Income
+                    <svg className="nav__icon--arrow-right">
+                      <use href={`${sprite}#icon-chevron`}></use>
+                    </svg>
                   </a>
                 </li>
                 <li className="nav__item">
                   <a className="nav__link" href="/">
+                    <svg className="nav__icon">
+                      <use href={`${sprite}#icon-discount`}></use>
+                    </svg>
                     Promote
+                    <svg className="nav__icon--arrow-right">
+                      <use href={`${sprite}#icon-chevron`}></use>
+                    </svg>
                   </a>
                 </li>
                 <li className="nav__item">
                   <a className="nav__link" href="/">
+                    <svg className="nav__icon">
+                      <use href={`${sprite}#icon-message-question`}></use>
+                    </svg>
                     Help
+                    <svg className="nav__icon--arrow-right">
+                      <use href={`${sprite}#icon-chevron`}></use>
+                    </svg>
                   </a>
                 </li>
               </ul>
 
               <ul className="user">
                 <li className="user__item">
-                  <img className="user__img" alt="avatar" />
+                  <img className="user__img" src={avatar} alt="avatar" />
                   <div>
                     <p className="user-description__name">Evano</p>
                     <p className="user-description__job">Project Manager</p>
@@ -86,6 +126,9 @@ export const Dashboard = () => {
                   className="form__input"
                   type="text"
                 />
+                <svg className="form__icon">
+                  <use href={`${sprite}#icon-search`}></use>
+                </svg>
               </form>
             </div>
 
@@ -199,7 +242,11 @@ export const Dashboard = () => {
               </p>
               <ul className="pagination">
                 <li className="pagination__item">
-                  <a className="pagination__link" href="/"></a>
+                  <a className="pagination__link" href="/">
+                    <svg className="pagination__icon pagination__icon-rotare">
+                      <use xlinkHref={`${sprite}#icon-chevron`}></use>
+                    </svg>
+                  </a>
                 </li>
                 <li className="pagination__item">
                   <a
@@ -238,7 +285,11 @@ export const Dashboard = () => {
                   </a>
                 </li>
                 <li className="pagination__item">
-                  <a className="pagination__link" href="/"></a>
+                  <a className="pagination__link" href="/">
+                    <svg className="pagination__icon" width="8px" height="12px">
+                      <use href={`${sprite}#icon-chevron`}></use>
+                    </svg>
+                  </a>
                 </li>
               </ul>
             </div>
