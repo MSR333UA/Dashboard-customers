@@ -3,44 +3,59 @@ import React from "react";
 export const Dashboard = () => {
   return (
     <main>
-      <div>
-        <section>
-          <h3>Sidebar section</h3>
-          <div>
-            <div>
-              <p>
-                Dashboard <span>v.01</span>
+      <div className="container">
+        <section
+          className="section-sidebar container__section-sidebar"
+          data-menu
+        >
+          <h3 className="visually-hidden">Sidebar section</h3>
+          <div className="sidebar">
+            <div className="logo sidebar__logo">
+              <p className="logo__text">
+                Dashboard <span className="logo__text--small-text">v.01</span>
               </p>
             </div>
 
-            <div>
-              <ul>
-                <li>
-                  <a>Dashboard</a>
+            <div className="nav-content">
+              <ul className="nav">
+                <li className="nav__item">
+                  <a className="nav__link" href="/">
+                    Dashboard
+                  </a>
                 </li>
-                <li>
-                  <a>Product</a>
+                <li className="nav__item">
+                  <a className="nav__link" href="/">
+                    Product
+                  </a>
                 </li>
-                <li>
-                  <a>Customers</a>
+                <li className="nav__item">
+                  <a className="nav__link nav__link--active" href="/">
+                    Customers
+                  </a>
                 </li>
-                <li>
-                  <a>Income</a>
+                <li className="nav__item">
+                  <a className="nav__link" href="/">
+                    Income
+                  </a>
                 </li>
-                <li>
-                  <a>Promote</a>
+                <li className="nav__item">
+                  <a className="nav__link" href="/">
+                    Promote
+                  </a>
                 </li>
-                <li>
-                  <a>Help</a>
+                <li className="nav__item">
+                  <a className="nav__link" href="/">
+                    Help
+                  </a>
                 </li>
               </ul>
 
-              <ul>
-                <li>
-                  <img />
+              <ul className="user">
+                <li className="user__item">
+                  <img className="user__img" alt="avatar" />
                   <div>
-                    <p>Evano</p>
-                    <p>Project Manager</p>
+                    <p className="user-description__name">Evano</p>
+                    <p className="user-description__job">Project Manager</p>
                   </div>
                 </li>
               </ul>
@@ -48,27 +63,35 @@ export const Dashboard = () => {
           </div>
         </section>
 
-        <section>
-          <h1>Hello Evano 👋🏼,</h1>
-          <button type="button" data-menu-button>
+        <section className="section-dashboard">
+          <h1 className="title">Hello Evano 👋🏼,</h1>
+          <button
+            type="button"
+            className="button-menu section-dashboard__button-menu"
+            data-menu-button
+          >
             Menu
           </button>
 
-          <div>
-            <div>
+          <div className="table-container section-dashboard__table-container">
+            <div className="table-description section-dashboard__table-description">
               <div>
-                <h2>All Customers</h2>
-                <p>Active Members</p>
+                <h2 className="table-description__title">All Customers</h2>
+                <p className="table-description__text">Active Members</p>
               </div>
 
-              <form>
-                <input />
+              <form className="form">
+                <input
+                  placeholder="Search"
+                  className="form__input"
+                  type="text"
+                />
               </form>
             </div>
 
-            <div>
-              <table>
-                <thead>
+            <div className="scroll-table">
+              <table className="table">
+                <thead className="table__head">
                   <tr>
                     <th>Customer Name</th>
                     <th>Company</th>
@@ -79,7 +102,7 @@ export const Dashboard = () => {
                   </tr>
                 </thead>
 
-                <tbody>
+                <tbody className="table__body">
                   <tr>
                     <td>Jane Cooper</td>
                     <td>Microsoft</td>
@@ -87,7 +110,7 @@ export const Dashboard = () => {
                     <td>jane@microsoft.com</td>
                     <td>United States</td>
                     <td>
-                      <span>Active</span>
+                      <span className="table__active">Active</span>
                     </td>
                   </tr>
 
@@ -98,7 +121,7 @@ export const Dashboard = () => {
                     <td>floyd@yahoo.com</td>
                     <td>Kiribati</td>
                     <td>
-                      <span>Inactive</span>
+                      <span className="table__inactive">Inactive</span>
                     </td>
                   </tr>
 
@@ -109,7 +132,7 @@ export const Dashboard = () => {
                     <td>ronald@adobe.com</td>
                     <td>Israel</td>
                     <td>
-                      <span>Inactive</span>
+                      <span className="table__inactive">Inactive</span>
                     </td>
                   </tr>
 
@@ -120,7 +143,7 @@ export const Dashboard = () => {
                     <td>marvin@tesla.com</td>
                     <td>Iran</td>
                     <td>
-                      <span>Active</span>
+                      <span className="table__active">Active</span>
                     </td>
                   </tr>
 
@@ -131,7 +154,7 @@ export const Dashboard = () => {
                     <td>jerome@google.com</td>
                     <td>Réunion</td>
                     <td>
-                      <span>Active</span>
+                      <span className="table__active">Active</span>
                     </td>
                   </tr>
 
@@ -142,7 +165,7 @@ export const Dashboard = () => {
                     <td>kathryn@microsoft.com</td>
                     <td>Curaçao</td>
                     <td>
-                      <span>Active</span>
+                      <span className="table__active">Active</span>
                     </td>
                   </tr>
 
@@ -153,7 +176,7 @@ export const Dashboard = () => {
                     <td>jacob@yahoo.com</td>
                     <td>Brazil</td>
                     <td>
-                      <span>Active</span>
+                      <span className="table__active">Active</span>
                     </td>
                   </tr>
 
@@ -164,38 +187,58 @@ export const Dashboard = () => {
                     <td>kristin@facebook.com</td>
                     <td>Åland Islands</td>
                     <td>
-                      <span>Inactive</span>
+                      <span className="table__inactive">Inactive</span>
                     </td>
                   </tr>
                 </tbody>
               </table>
             </div>
-            <div>
-              <p>Showing data 1 to 8 of 256K entries</p>
-              <ul>
-                <li>
-                  <a></a>
+            <div className="table-footer section-dashboard__table-footer">
+              <p className="table-footer__text">
+                Showing data 1 to 8 of 256K entries
+              </p>
+              <ul className="pagination">
+                <li className="pagination__item">
+                  <a className="pagination__link" href="/"></a>
                 </li>
-                <li>
-                  <a>1</a>
+                <li className="pagination__item">
+                  <a
+                    className="pagination__link pagination__link--active"
+                    href="/"
+                  >
+                    1
+                  </a>
                 </li>
-                <li>
-                  <a>2</a>
+                <li className="pagination__item">
+                  <a className="pagination__link" href="/">
+                    2
+                  </a>
                 </li>
-                <li>
-                  <a>3</a>
+                <li className="pagination__item pagination__item--disable">
+                  <a className="pagination__link" href="/">
+                    3
+                  </a>
                 </li>
-                <li>
-                  <a>4</a>
+                <li className="pagination__item pagination__item--disable">
+                  <a className="pagination__link" href="/">
+                    4
+                  </a>
                 </li>
-                <li>
-                  <a></a>
+                <li className="pagination__item">
+                  <a
+                    className="pagination__link pagination__link--nobg"
+                    href="/"
+                  >
+                    &hellip;
+                  </a>
                 </li>
-                <li>
-                  <a>40</a>
+                <li className="pagination__item">
+                  <a className="pagination__link" href="/">
+                    40
+                  </a>
                 </li>
-                <li>
-                  <a></a>
+                <li className="pagination__item">
+                  <a className="pagination__link" href="/"></a>
                 </li>
               </ul>
             </div>
