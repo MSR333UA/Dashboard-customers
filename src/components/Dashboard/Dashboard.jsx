@@ -1,4 +1,5 @@
 import React from "react";
+import "./Dashboard.css";
 import avatar from "../../assets/img/avatar.png";
 import sprite from "../../assets/img/sprite.svg";
 
