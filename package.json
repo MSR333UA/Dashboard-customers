@@ -2,7 +2,7 @@
   "name": "dashboard-customers",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://MSR333UA.github.io/dashboard-customers/",
+  "homepage": "https://msr333ua.github.io/dashboard-customers/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
